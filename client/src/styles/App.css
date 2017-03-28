@@ -1,0 +1,36 @@
+.RSVP {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.RSVP__details {
+  text-align: center;
+}
+
+.RSVP__button {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin-top: 20px;
+  padding: 15px 20px;
+  background-color: #19C3F2;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: inset 0 -10px 10px -8px #0090BF; 
+  cursor: pointer;
+  outline: 0;
+}
+
+.RSVP__button:active {
+  transform: scale(0.95);
+}
+
+.RSVP__smiley {
+  height: 128px;
+  width: 128px;
+}
+
+.RSVP__heading {
+  margin-bottom: 0;
+}

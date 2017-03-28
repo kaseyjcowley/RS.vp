@@ -1,0 +1,83 @@
+.Radio {
+  width: 300px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Radio:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.Radio:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.Radio--affirmative {
+  background-color: #00BD9C;
+}
+
+.Radio--neutral {
+  background-color: #F2C500;
+}
+
+.Radio--negative {
+  background-color: #E94A35;
+}
+
+.Radio__heading {
+  margin: 0 0 5px 0;
+}
+
+.Radio__avatar {
+  max-width: 64px;
+  margin-right: 10px;
+  flex: 1;
+}
+
+.Radio__content {
+  flex: 2;
+}
+
+.Radio__box {
+  height: 24px;
+  width: 24px;
+  border-radius: 100%;
+  background-color: white;
+  flex: 1;
+}
+
+.Radio__box--checked {
+  animation: bounce .5s linear;
+}
+
+.Radio__box--checked:after {
+  content: '';
+  display: block;
+
+  /*Make it a small rectangle so the border will create an L-shape*/
+  width: 6px;
+  height: 12px;
+
+  /*Add a white border on the bottom and left, creating that 'L' */
+  border: solid #000;
+  border-width: 0 5px 5px 0;
+
+  /*Rotate the L 45 degrees to turn it into a checkmark*/
+  transform: rotate(45deg);
+
+  position: relative;
+  left: 7px;
+  top: 2px;
+}
+
+@keyframes bounce {
+  0%   { transform:scale(0.5); }
+  50%  { transform:scale(1.3); }
+  75%  { transform:scale(0.9); }
+  100% { transform:scale(1.0); }
+}

@@ -1,0 +1,8 @@
+.Spinner {
+  text-align: center;
+}
+
+.Spinner__img {
+  width: 64px;
+  margin: auto;
+}
